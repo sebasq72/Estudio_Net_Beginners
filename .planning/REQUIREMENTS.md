@@ -166,7 +166,7 @@
 | SYSD-07 | Phase 8 | Pending |
 
 **Coverage:**
-- v1 requirements: 43 total
+- v1 requirements: 53 total
 - Mapped to phases: 43
 - Unmapped: 0 ✓
 
