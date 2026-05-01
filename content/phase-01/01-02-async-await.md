@@ -642,7 +642,9 @@ public async Task<List<DownloadResult>> DownloadFilesAsync(
         try
         {
             ct.ThrowIfCancellationRequested();
-            using var client = new HttpClient();
+            // En produccion: inyectar IHttpClientFactory y usar CreateClient()
+            // Para este ejercicio usamos un cliente compartido pasado por parametro
+            using var client = new HttpClient(); // ⚠ ver nota abajo
             var data = await client.GetByteArrayAsync(url, ct);
             var fileName = Path.GetFileName(new Uri(url).AbsolutePath);
             var filePath = Path.Combine(outputDirectory, fileName);
@@ -669,6 +671,7 @@ public async Task<List<DownloadResult>> DownloadFilesAsync(
 - El `finally` garantiza que el semaphore se libera incluso si la descarga falla. Sin `Release()`, los slots se agotan.
 - `Interlocked.Increment` es thread-safe para el contador de progreso — multiples tasks pueden incrementarlo simultaneamente.
 - La cancelacion del caller se propaga (re-throw); los errores individuales se capturan y retornan como `DownloadResult` con `Success = false`.
+- ⚠ **En produccion nunca usar `new HttpClient()` dentro de un loop o task paralela** — agota sockets (socket exhaustion). Inyectar `IHttpClientFactory` via DI y llamar `factory.CreateClient()` para cada descarga.
 
 </details>
 
