@@ -114,7 +114,8 @@ public class ModernUserService(
         JsonSerializer.Serialize(user); // System.Text.Json, no Newtonsoft
 
     public async Task SendNotificationAsync(string message) =>
-        await httpClient.GetAsync($"https://api.notify.com?msg={message}");
+        await httpClient.GetAsync(
+            $"https://api.notify.com?msg={Uri.EscapeDataString(message)}");
 }
 ```
 
@@ -123,6 +124,7 @@ public class ModernUserService(
 - `ConfigurationManager` -> `IConfiguration` (lee `appsettings.json`, env vars, y mas).
 - `System.Text.Json` es el default built-in. Ojo: case-sensitive por defecto, diferente a Newtonsoft.
 - `WebClient` obsoleto -> `HttpClient` via `IHttpClientFactory` (evita socket exhaustion).
+- Siempre codifica valores de usuario en URLs con `Uri.EscapeDataString()` para evitar inyeccion en query string. Un `message` con `&` o `=` corromperia la URL sin este encoding.
 
 </details>
 
