@@ -49,7 +49,7 @@ Plans:
   2. El estudiante aplica cada principio SOLID en codigo y articula trade-offs de cada uno
   3. El estudiante decide correctamente entre clase abstracta e interfaz, incluyendo default implementations de C# 8
   4. El estudiante refactoriza codigo sucio aplicando nombres descriptivos, metodos pequenos y eliminacion de duplicacion
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
 - [ ] 02-01: Los 4 pilares de OOP con coding challenges
