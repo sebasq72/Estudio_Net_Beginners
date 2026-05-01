@@ -33,7 +33,7 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. El estudiante implementa flujos async/await correctos y detecta/corrige trampas comunes (async void, .Result deadlocks, Task.Run mal uso)
   4. El estudiante escribe queries LINQ complejas con deferred execution y distingue IQueryable vs IEnumerable
   5. El estudiante usa generics, delegates, events y Func/Action/Predicate en ejercicios practicos
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
 - [ ] 01-01: C# moderno (features C# 8-14) y puente Framework-a-moderno
