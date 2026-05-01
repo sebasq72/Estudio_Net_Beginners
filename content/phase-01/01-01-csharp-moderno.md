@@ -223,11 +223,11 @@ public class OrderService
         return order.Customer?.Email;
     }
 
-    public void ProcessOrder(Order order)
+    public Order ProcessOrder(Order order)
     {
         ArgumentNullException.ThrowIfNull(order);
         var discount = GetDiscount(order.Customer?.MembershipLevel);
-        order = order with { Total = GetOrderTotal(order) * (1 - discount) };
+        return order with { Total = GetOrderTotal(order) * (1 - discount) };
     }
 
     private decimal GetDiscount(string? level) => level switch
@@ -241,6 +241,7 @@ public class OrderService
 - `GetOrder` retorna `Order?` porque `FirstOrDefault` puede retornar null.
 - `GetCustomerEmail` retorna `string?` — el operador `?.` propaga la nullability a traves de la cadena.
 - `ArgumentNullException.ThrowIfNull()` (.NET 6+) es el patron moderno para guard clauses.
+- `ProcessOrder` retorna `Order` — el record es inmutable, `with` produce un **nuevo objeto**. El caller debe usar el valor retornado: `var updated = service.ProcessOrder(order);`. Asignar el resultado a la variable local sin retornarlo seria un no-op silencioso.
 
 </details>
 
