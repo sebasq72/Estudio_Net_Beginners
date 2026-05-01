@@ -439,10 +439,11 @@ private async Task<ReportData> FetchWithFallbackAsync(
     {
         return await FetchFromApiAsync(apiName, url, ct);
     }
-    catch (OperationCanceledException)
+    catch (OperationCanceledException) when (!ct.IsCancellationRequested)
     {
-        return new ReportData(apiName, null!); // marcamos como fallido
+        return new ReportData(apiName, null!); // timeout interno — retornar resultado parcial
     }
+    // Si ct fue cancelado por el caller, la excepcion se propaga (no se captura)
     catch (HttpRequestException)
     {
         return new ReportData(apiName, null!); // error de red, tambien fallido
