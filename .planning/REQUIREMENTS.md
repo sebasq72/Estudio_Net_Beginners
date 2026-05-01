@@ -7,8 +7,8 @@
 
 ### C# Moderno
 
-- [ ] **CSHA-01**: El estudiante comprende las diferencias clave entre .NET Framework y .NET moderno (hosting model, DI, config, serialization)
-- [ ] **CSHA-02**: El estudiante escribe codigo C# usando features de C# 8-12 (nullable refs, records, pattern matching, primary constructors, collection expressions)
+- [x] **CSHA-01**: El estudiante comprende las diferencias clave entre .NET Framework y .NET moderno (hosting model, DI, config, serialization)
+- [x] **CSHA-02**: El estudiante escribe codigo C# usando features de C# 8-12 (nullable refs, records, pattern matching, primary constructors, collection expressions)
 - [ ] **CSHA-03**: El estudiante comprende y aplica async/await profundo: state machine, Task vs ValueTask, ConfigureAwait, cancelacion
 - [ ] **CSHA-04**: El estudiante identifica y evita trampas comunes de async: async void, .Result deadlocks, Task.Run mal uso
 - [ ] **CSHA-05**: El estudiante usa LINQ idiomaticamente: deferred execution, IQueryable vs IEnumerable, GroupBy/SelectMany/Aggregate
@@ -111,8 +111,8 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| CSHA-01 | Phase 1 | Pending |
-| CSHA-02 | Phase 1 | Pending |
+| CSHA-01 | Phase 1 | Complete |
+| CSHA-02 | Phase 1 | Complete |
 | CSHA-03 | Phase 1 | Pending |
 | CSHA-04 | Phase 1 | Pending |
 | CSHA-05 | Phase 1 | Pending |
