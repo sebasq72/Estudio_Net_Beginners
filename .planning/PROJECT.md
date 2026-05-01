@@ -12,7 +12,10 @@ Preparar al estudiante para pasar entrevistas tecnicas de roles .NET generalista
 
 ### Validated
 
-(None yet — ship to validate)
+- [x] C# 8-14 features con tabla de traduccion .NET Framework → moderno — Validated in Phase 01: Modern C# Foundations (CSHA-01, CSHA-02)
+- [x] Async/await profundo: state machine, Task vs ValueTask, CancellationToken, trampas — Validated in Phase 01: Modern C# Foundations (CSHA-03, CSHA-04)
+- [x] LINQ, generics, delegates y programacion funcional en C# — Validated in Phase 01: Modern C# Foundations (CSHA-05, CSHA-06)
+- [x] Formato: teoria en espanol + snippets compilables + 5 challenges progresivos con soluciones colapsables por tema — Validated in Phase 01
 
 ### Active
 
