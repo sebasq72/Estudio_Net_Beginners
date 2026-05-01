@@ -538,18 +538,22 @@ var sorted = products
 Un delegate puede encadenar multiples metodos. Al invocarlo, todos se ejecutan en orden:
 
 ```csharp
-Action<string> handler = message => Console.WriteLine($"[Console] {message}");
-handler += message => Console.WriteLine($"[File] {message}");
-handler += message => Console.WriteLine($"[DB] {message}");
+Action<string> consoleHandler = message => Console.WriteLine($"[Console] {message}");
+Action<string> fileHandler   = message => Console.WriteLine($"[File] {message}");
+Action<string> dbHandler     = message => Console.WriteLine($"[DB] {message}");
+
+// Guardar referencias ANTES de agregar — son necesarias para poder remover despues
+Action<string> handler = consoleHandler;
+handler += fileHandler;
+handler += dbHandler;
 
 handler("Order received");
 // [Console] Order received
 // [File] Order received
 // [DB] Order received
 
-// Remover un handler
-Action<string> fileHandler = message => Console.WriteLine($"[File] {message}");
-handler -= fileHandler; // Nota: solo funciona si es la misma instancia del delegate
+// Remover un handler: DEBE ser la misma instancia que se uso con +=
+handler -= fileHandler; // ✓ funciona — fileHandler apunta al mismo objeto delegate
 
 // Multicast con Func: solo retorna el resultado del ULTIMO metodo
 Func<int, int> pipeline = x => x + 1;
