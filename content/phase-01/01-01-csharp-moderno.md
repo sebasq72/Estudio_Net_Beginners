@@ -215,7 +215,7 @@ public class OrderService
     public decimal GetOrderTotal(Order order)
     {
         ArgumentNullException.ThrowIfNull(order);
-        if (order.Items is null or { Count: 0 }) return 0m;
+        if (order.Items.Count == 0) return 0m; // Items es non-nullable: no checar null
         return order.Items.Sum(i => i.Price * i.Quantity);
     }
 
