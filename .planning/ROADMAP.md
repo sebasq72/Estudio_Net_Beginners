@@ -38,7 +38,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 Plans:
 - [x] 01-01: C# moderno (features C# 8-14) y puente Framework-a-moderno
 - [x] 01-02: Async/await profundo y trampas comunes
-- [ ] 01-03: LINQ, generics, delegates y programacion funcional en C#
+- [x] 01-03: LINQ, generics, delegates y programacion funcional en C#
 
 ### Phase 2: OOP + SOLID + Clean Code
 **Goal**: El estudiante explica y aplica OOP y SOLID con confianza, escribiendo codigo limpio y justificando decisiones de diseno

@@ -11,8 +11,8 @@
 - [x] **CSHA-02**: El estudiante escribe codigo C# usando features de C# 8-12 (nullable refs, records, pattern matching, primary constructors, collection expressions)
 - [ ] **CSHA-03**: El estudiante comprende y aplica async/await profundo: state machine, Task vs ValueTask, ConfigureAwait, cancelacion
 - [ ] **CSHA-04**: El estudiante identifica y evita trampas comunes de async: async void, .Result deadlocks, Task.Run mal uso
-- [ ] **CSHA-05**: El estudiante usa LINQ idiomaticamente: deferred execution, IQueryable vs IEnumerable, GroupBy/SelectMany/Aggregate
-- [ ] **CSHA-06**: El estudiante domina generics, delegates, events, lambdas y Func/Action/Predicate
+- [x] **CSHA-05**: El estudiante usa LINQ idiomaticamente: deferred execution, IQueryable vs IEnumerable, GroupBy/SelectMany/Aggregate
+- [x] **CSHA-06**: El estudiante domina generics, delegates, events, lambdas y Func/Action/Predicate
 
 ### OOP + SOLID + Mejores Practicas
 
@@ -115,8 +115,8 @@
 | CSHA-02 | Phase 1 | Complete |
 | CSHA-03 | Phase 1 | Pending |
 | CSHA-04 | Phase 1 | Pending |
-| CSHA-05 | Phase 1 | Pending |
-| CSHA-06 | Phase 1 | Pending |
+| CSHA-05 | Phase 1 | Complete |
+| CSHA-06 | Phase 1 | Complete |
 | OOP-01 | Phase 2 | Pending |
 | OOP-02 | Phase 2 | Pending |
 | OOP-03 | Phase 2 | Pending |
