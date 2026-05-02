@@ -52,7 +52,7 @@ Plans:
 **Plans**: 3 plans
 
 Plans:
-- [ ] 02-01: Los 4 pilares de OOP con coding challenges
+- [x] 02-01: Los 4 pilares de OOP con coding challenges
 - [ ] 02-02: SOLID principios uno a uno con trade-offs
 - [ ] 02-03: Clean code, abstract vs interface, y coding challenges integrados
 
@@ -174,7 +174,7 @@ Note: Phase 6 (Algoritmos) runs as a parallel daily track alongside Phases 4-5.
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Modern C# Foundations | 0/3 | Not started | - |
-| 2. OOP + SOLID + Clean Code | 0/3 | Not started | - |
+| 2. OOP + SOLID + Clean Code | 1/3 | In Progress|  |
 | 3. Design Patterns | 0/4 | Not started | - |
 | 4. ASP.NET Core + Testing | 0/4 | Not started | - |
 | 5. EF Core + SQL Server | 0/4 | Not started | - |

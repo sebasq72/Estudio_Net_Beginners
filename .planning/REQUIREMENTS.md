@@ -16,7 +16,7 @@
 
 ### OOP + SOLID + Mejores Practicas
 
-- [ ] **OOP-01**: El estudiante explica y aplica los 4 pilares de OOP con ejemplos en C# (encapsulacion, herencia, polimorfismo, abstraccion)
+- [x] **OOP-01**: El estudiante explica y aplica los 4 pilares de OOP con ejemplos en C# (encapsulacion, herencia, polimorfismo, abstraccion)
 - [ ] **OOP-02**: El estudiante aplica cada principio SOLID con codigo C# y puede explicar trade-offs
 - [ ] **OOP-03**: El estudiante distingue cuándo usar clase abstracta vs interfaz (incluyendo default implementations desde C# 8)
 - [ ] **OOP-04**: El estudiante aplica mejores practicas de clean code: nombres descriptivos, metodos pequenos, no duplicacion
@@ -117,7 +117,7 @@
 | CSHA-04 | Phase 1 | Pending |
 | CSHA-05 | Phase 1 | Complete |
 | CSHA-06 | Phase 1 | Complete |
-| OOP-01 | Phase 2 | Pending |
+| OOP-01 | Phase 2 | Complete |
 | OOP-02 | Phase 2 | Pending |
 | OOP-03 | Phase 2 | Pending |
 | OOP-04 | Phase 2 | Pending |
