@@ -54,7 +54,7 @@ Plans:
 Plans:
 - [x] 02-01: Los 4 pilares de OOP con coding challenges
 - [x] 02-02: SOLID principios uno a uno con trade-offs
-- [ ] 02-03: Clean code, abstract vs interface, y coding challenges integrados
+- [x] 02-03: Clean code, abstract vs interface, y coding challenges integrados
 
 ### Phase 3: Design Patterns
 **Goal**: El estudiante implementa los patrones de diseno principales en C# y sabe cuando usarlos (y cuando no)
