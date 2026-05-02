@@ -114,6 +114,11 @@ public class OrderService(
 }
 ```
 
+> **Nota (.NET 6+):** `SmtpClient` esta marcado como obsoleto en .NET 6+. En proyectos reales usa
+> `MailKit` (`MimeMessage` + `SmtpClient` de MailKit). Para los ejemplos de este modulo
+> se usa `SmtpClient` de `System.Net.Mail` por simplicidad conceptual; en produccion
+> usa MailKit o los SDK de proveedores (SendGrid, Mailgun).
+
 ### Challenge 1: Refactorizar PaymentService
 
 El siguiente `PaymentService` viola SRP al mezclar validacion, cobro, logging y envio de recibo en un solo metodo. Tu tarea: identifica las responsabilidades y separa la clase en unidades con una sola razon para cambiar.
