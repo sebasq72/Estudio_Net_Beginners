@@ -53,7 +53,7 @@ Plans:
 
 Plans:
 - [x] 02-01: Los 4 pilares de OOP con coding challenges
-- [ ] 02-02: SOLID principios uno a uno con trade-offs
+- [x] 02-02: SOLID principios uno a uno con trade-offs
 - [ ] 02-03: Clean code, abstract vs interface, y coding challenges integrados
 
 ### Phase 3: Design Patterns
