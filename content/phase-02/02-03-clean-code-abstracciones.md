@@ -709,8 +709,12 @@ Este challenge combina todo lo aprendido: clean code (nombres, metodos pequenos,
 
 **Escenario:** El siguiente `ReportingSystem` fue escrito rapidamente para cumplir un deadline. Contiene multiples problemas que debes identificar y corregir:
 
+> **Nota:** En .NET Core / .NET 5+, usa el paquete `Microsoft.Data.SqlClient` (NuGet),
+> no `System.Data.SqlClient` (legacy in-box). La API es compatible; solo cambia el
+> namespace y el origen del paquete.
+
 ```csharp
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;  // NuGet: Microsoft.Data.SqlClient
 
 public class ReportingSystem
 {
