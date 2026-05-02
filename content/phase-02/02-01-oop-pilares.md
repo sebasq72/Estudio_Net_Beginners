@@ -607,8 +607,6 @@ Console.WriteLine(report.GenerateReport());
 ```csharp
 public abstract class ReportGenerator
 {
-    protected string ReportData { get; private set; } = string.Empty;
-
     // Contrato: subclases implementan estos pasos
     protected abstract void GatherData();
     protected abstract string FormatOutput();
